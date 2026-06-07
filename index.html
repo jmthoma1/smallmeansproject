@@ -40,9 +40,9 @@ nav a{
 }
 
 .hero{
-  min-height:520px;
+  min-height:540px;
   background:
-    linear-gradient(rgba(255,255,255,.05),rgba(255,255,255,.25)),
+    linear-gradient(rgba(255,255,255,.05),rgba(255,255,255,.22)),
     url("images/HeroBanner.png");
   background-size:cover;
   background-position:center;
@@ -71,29 +71,61 @@ h2{
   font-size:1.15rem;
 }
 
-.gallery{
+.album-grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-  gap:24px;
-  margin-top:40px;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:32px;
+  margin-top:45px;
 }
 
-.card{
+.album-card{
   background:white;
-  border-radius:14px;
+  border-radius:18px;
   overflow:hidden;
-  box-shadow:0 8px 24px rgba(0,0,0,.12);
+  box-shadow:0 10px 28px rgba(0,0,0,.14);
   text-align:center;
+  transition:.25s;
 }
 
-.card img{
+.album-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 16px 36px rgba(0,0,0,.18);
+}
+
+.album-card img{
   width:100%;
   display:block;
 }
 
-.card h3{
-  font-size:1rem;
-  padding:14px;
+.album-body{
+  padding:26px 22px 30px;
+}
+
+.album-body h3{
+  font-size:1.4rem;
+  margin-bottom:10px;
+}
+
+.album-body p{
+  margin-bottom:22px;
+}
+
+.button{
+  display:inline-block;
+  background:#1f4d5a;
+  color:white;
+  text-decoration:none;
+  padding:12px 22px;
+  border-radius:7px;
+  font-weight:700;
+}
+
+.button:hover{
+  background:#276577;
+}
+
+.coming-soon{
+  opacity:.65;
 }
 
 .footer{
@@ -106,6 +138,22 @@ h2{
 .footer a{
   color:#ffd36a;
 }
+
+@media(max-width:760px){
+  nav{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  nav a{
+    margin:0 8px;
+    font-size:.9rem;
+  }
+
+  .hero{
+    min-height:360px;
+  }
+}
 </style>
 </head>
 
@@ -114,51 +162,56 @@ h2{
 <nav>
   <div class="brand">Small Means Project</div>
   <div>
-    <a href="#music">Music</a>
-    <a href="#nephi">1 Nephi</a>
+    <a href="#project">Project</a>
+    <a href="#albums">Albums</a>
     <a href="https://smallmeansproductions.com">Small Means Productions</a>
   </div>
 </nav>
 
 <section class="hero"></section>
 
-<section class="section" id="music">
+<section class="section" id="project">
   <h2>Book of Mormon Music Project</h2>
   <div class="intro">
-    A scripture-inspired musical journey through the Book of Mormon — songs of faith,
-    struggle, discipleship, family, wilderness, revelation, and hope.
+    A scripture-inspired musical journey through the Book of Mormon —
+    with original songs, cover art, and musical styles shaped by the
+    stories, questions, warnings, promises, and hope found in each book.
   </div>
 </section>
 
-<section class="section" id="nephi">
-  <h2>1 Nephi</h2>
+<section class="section" id="albums">
+  <h2>Gold Records Collection</h2>
   <div class="intro">
-    Songs inspired by the opening book of the Book of Mormon.
+    Each volume gathers songs inspired by one book of the Book of Mormon.
   </div>
 
-  <div class="gallery">
-    <div class="card"><img src="images/01Nephi01.jpg"><h3>Great and Marvelous</h3></div>
-    <div class="card"><img src="images/01Nephi02.jpg"><h3>River and Valley</h3></div>
-    <div class="card"><img src="images/01Nephi03.jpg"><h3>I Will Go and Do</h3></div>
-    <div class="card"><img src="images/01Nephi04.jpg"><h3>Why Doubt?</h3></div>
-    <div class="card"><img src="images/01Nephi05.jpg"><h3>Now I Know</h3></div>
-    <div class="card"><img src="images/01Nephi06.png"><h3>Things of Worth</h3></div>
-    <div class="card"><img src="images/01Nephi07.jpg"><h3>Beyond Jerusalem</h3></div>
-    <div class="card"><img src="images/01Nephi08.jpg"><h3>Come to the Tree</h3></div>
-    <div class="card"><img src="images/01Nephi09.jpg"><h3>The End from the Beginning</h3></div>
-    <div class="card"><img src="images/01Nephi10.jpg"><h3>I Want to Know for Myself</h3></div>
-    <div class="card"><img src="images/01Nephi11.jpg"><h3>The Fool Who Built a Ship</h3></div>
-    <div class="card"><img src="images/01Nephi12.jpg"><h3>Loose the Cords</h3></div>
-    <div class="card"><img src="images/01Nephi13.jpg"><h3>I’ve Seen the Light</h3></div>
-    <div class="card"><img src="images/01Nephi14.jpg"><h3>Refined in the Furnace</h3></div>
-    <div class="card"><img src="images/01Nephi15.png"><h3>Come Out!</h3></div>
-    <div class="card"><img src="images/01Nephi16.jpg"><h3>Gathered Home</h3></div>
-    <div class="card"><img src="images/01Nephi17.jpg"><h3>Additional Release</h3></div>
-    <div class="card"><img src="images/01Nephi18.png"><h3>Additional Release</h3></div>
-    <div class="card"><img src="images/01Nephi19.jpg"><h3>Additional Release</h3></div>
-    <div class="card"><img src="images/01Nephi20.png"><h3>Additional Release</h3></div>
-    <div class="card"><img src="images/01Nephi21.jpg"><h3>Additional Release</h3></div>
-    <div class="card"><img src="images/01Nephi22.jpg"><h3>Additional Release</h3></div>
+  <div class="album-grid">
+
+    <div class="album-card">
+      <img src="images/GRV1.png" alt="Gold Records Vol. 1: 1 Nephi">
+      <div class="album-body">
+        <h3>Gold Records Vol. 1</h3>
+        <p><strong>1 Nephi</strong><br>Songs of faith, family, wilderness, revelation, and deliverance.</p>
+        <a href="1-nephi.html" class="button">View Album</a>
+      </div>
+    </div>
+
+    <div class="album-card coming-soon">
+      <div class="album-body">
+        <h3>Gold Records Vol. 2</h3>
+        <p><strong>2 Nephi</strong><br>Coming soon.</p>
+        <a href="#" class="button">Coming Soon</a>
+      </div>
+    </div>
+
+    <div class="album-card coming-soon">
+      <div class="album-body">
+        <h3>Gold Records Vol. 3</h3>
+        <p><strong>Jacob</strong><br>Coming soon.</p>
+        <a href="#" class="button">Coming Soon</a>
+      </div>
+    </div>
+
   </div>
 </section>
 
