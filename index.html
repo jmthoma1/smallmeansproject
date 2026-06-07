@@ -1,22 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Small Means Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Small Means Project</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:Segoe UI,Arial,sans-serif;
+  background:#f8f3e8;
+  color:#1f2a2e;
+  line-height:1.6;
+}
+
+nav{
+  background:rgba(255,255,255,.92);
+  padding:16px 28px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+
+nav a{
+  color:#1f4d5a;
+  text-decoration:none;
+  font-weight:700;
+  margin-left:18px;
+}
+
+.hero{
+  min-height:520px;
+  background:
+    linear-gradient(rgba(255,255,255,.1),rgba(255,255,255,.35)),
+    url("HeroBanner.png");
+  background-size:cover;
+  background-position:center;
+}
+
+.section{
+  max-width:1200px;
+  margin:auto;
+  padding:65px 24px;
+}
+
+h1,h2,h3{
+  color:#1f4d5a;
+}
+
+h2{
+  text-align:center;
+  font-size:2.3rem;
+  margin-bottom:20px;
+}
+
+.intro{
+  max-width:850px;
+  margin:auto;
+  text-align:center;
+  font-size:1.15rem;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:24px;
+  margin-top:40px;
+}
+
+.card{
+  background:white;
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 8px 24px rgba(0,0,0,.12);
+  text-align:center;
+}
+
+.card img{
+  width:100%;
+  display:block;
+}
+
+.card h3{
+  font-size:1rem;
+  padding:14px;
+}
+
+.footer{
+  background:#173c45;
+  color:white;
+  text-align:center;
+  padding:35px 20px;
+}
+
+.footer a{
+  color:#ffd36a;
+}
+</style>
 </head>
-<body style="background-color:#000; color:white; font-family:Arial; text-align:center; padding:50px;">
-    <h1>Small Means Project</h1>
-    <p>Songs of Faith. Stories of the Soul.</p>
 
-    <p>
-        Book of Mormon Music Project
-    </p>
+<body>
 
-    <p>
-        <a href="https://smallmeansproductions.com" style="color:gold;">
-            Visit Small Means Productions
-        </a>
-    </p>
+<nav>
+  <div><strong>Small Means Project</strong></div>
+  <div>
+    <a href="#music">Music</a>
+    <a href="#nephi">1 Nephi</a>
+    <a href="https://smallmeansproductions.com">Small Means Productions</a>
+  </div>
+</nav>
+
+<section class="hero"></section>
+
+<section class="section" id="music">
+  <h2>Book of Mormon Music Project</h2>
+  <div class="intro">
+    A scripture-inspired musical journey through the Book of Mormon — songs of faith,
+    struggle, discipleship, family, wilderness, revelation, and hope.
+  </div>
+</section>
+
+<section class="section" id="nephi">
+  <h2>1 Nephi</h2>
+  <div class="intro">
+    Songs inspired by the opening book of the Book of Mormon.
+  </div>
+
+  <div class="gallery">
+    <div class="card"><img src="01Nephi01.jpg"><h3>Great and Marvelous</h3></div>
+    <div class="card"><img src="01Nephi02.jpg"><h3>River and Valley</h3></div>
+    <div class="card"><img src="01Nephi03.jpg"><h3>I Will Go and Do</h3></div>
+    <div class="card"><img src="01Nephi04.jpg"><h3>Why Doubt?</h3></div>
+    <div class="card"><img src="01Nephi05.jpg"><h3>Now I Know</h3></div>
+    <div class="card"><img src="01Nephi06.png"><h3>Things of Worth</h3></div>
+    <div class="card"><img src="01Nephi07.jpg"><h3>Beyond Jerusalem</h3></div>
+    <div class="card"><img src="01Nephi08.jpg"><h3>Come to the Tree</h3></div>
+    <div class="card"><img src="01Nephi09.jpg"><h3>The End from the Beginning</h3></div>
+    <div class="card"><img src="01Nephi10.jpg"><h3>I Want to Know for Myself</h3></div>
+    <div class="card"><img src="01Nephi11.jpg"><h3>The Fool Who Built a Ship</h3></div>
+    <div class="card"><img src="01Nephi12.jpg"><h3>Loose the Cords</h3></div>
+    <div class="card"><img src="01Nephi13.jpg"><h3>I’ve Seen the Light</h3></div>
+    <div class="card"><img src="01Nephi14.jpg"><h3>Refined in the Furnace</h3></div>
+    <div class="card"><img src="01Nephi15.png"><h3>Come Out!</h3></div>
+    <div class="card"><img src="01Nephi16.jpg"><h3>Gathered Home</h3></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>Small Means Project</p>
+  <p>
+    Part of <a href="https://smallmeansproductions.com">Small Means Productions</a>
+  </p>
+</footer>
+
 </body>
 </html>
