@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&display=swap" rel="stylesheet">
-  
+
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 
@@ -130,14 +130,14 @@ h2{
 
 .album-grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:32px;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:28px;
   margin-top:45px;
 }
 
 .album-card{
   background:white;
-  border-radius:18px;
+  border-radius:14px;
   overflow:hidden;
   box-shadow:0 10px 28px rgba(0,0,0,.14);
   text-align:center;
@@ -151,15 +151,17 @@ h2{
 
 .album-card img{
   width:100%;
+  aspect-ratio:1/1;
+  object-fit:cover;
   display:block;
 }
 
 .album-body{
-  padding:26px 22px 30px;
+  padding:24px 20px 28px;
 }
 
 .album-body h3{
-  font-size:1.4rem;
+  font-size:1.25rem;
   margin-bottom:10px;
 }
 
@@ -181,8 +183,9 @@ h2{
   background:#276577;
 }
 
-.coming-soon{
-  opacity:.65;
+.button[aria-disabled="true"]{
+  background:#68787d;
+  cursor:default;
 }
 
 .footer{
@@ -243,7 +246,7 @@ h2{
 <section class="section" id="project">
   <h2>Book of Mormon Music Project</h2>
   <div class="intro">
-    A scripture-inspired musical journey through the Book of Mormon —
+    A scripture-inspired musical journey through the Book of Mormon -
     with original songs, cover art, and musical styles shaped by the
     stories, questions, warnings, promises, and hope found in each book.
   </div>
@@ -256,7 +259,6 @@ h2{
   </div>
 
   <div class="album-grid">
-
     <div class="album-card">
       <img src="images/GRV1.png" alt="Gold Records Vol. 1: 1 Nephi">
       <div class="album-body">
@@ -266,22 +268,131 @@ h2{
       </div>
     </div>
 
-    <div class="album-card coming-soon">
+    <div class="album-card">
+      <img src="images/GRV2.png" alt="Gold Records Vol. 2: 2 Nephi">
       <div class="album-body">
         <h3>Gold Records Vol. 2</h3>
-        <p><strong>2 Nephi</strong><br>Coming soon.</p>
-        <a href="#" class="button">Coming Soon</a>
+        <p><strong>2 Nephi</strong><br>Songs of prophecy, covenant, grace, and the Redeemer.</p>
+        <a href="#" class="button" aria-disabled="true">Coming Soon</a>
       </div>
     </div>
 
-    <div class="album-card coming-soon">
+    <div class="album-card">
+      <img src="images/GRV3.png" alt="Gold Records Vol. 3: Jacob">
       <div class="album-body">
         <h3>Gold Records Vol. 3</h3>
-        <p><strong>Jacob</strong><br>Coming soon.</p>
-        <a href="#" class="button">Coming Soon</a>
+        <p><strong>Jacob</strong><br>Songs of steadfast faith, mercy, and the vineyard of the Lord.</p>
+        <a href="#" class="button" aria-disabled="true">Coming Soon</a>
       </div>
     </div>
 
+    <div class="album-card">
+      <img src="images/GRV4.png" alt="Gold Records Vol. 4: Enos">
+      <div class="album-body">
+        <h3>Gold Records Vol. 4</h3>
+        <p><strong>Enos</strong><br>Songs of wrestled prayer, forgiveness, and covenant hope.</p>
+        <a href="#" class="button" aria-disabled="true">Coming Soon</a>
+      </div>
+    </div>
+
+    <div class="album-card">
+      <img src="images/GRV5.png" alt="Gold Records Vol. 5: Jarom">
+      <div class="album-body">
+        <h3>Gold Records Vol. 5</h3>
+        <p><strong>Jarom</strong><br>Songs of remembrance, diligence, and preserving the word.</p>
+        <a href="#" class="button" aria-disabled="true">Coming Soon</a>
+      </div>
+    </div>
+
+    <div class="album-card">
+      <img src="images/GRV6.png" alt="Gold Records Vol. 6: Omni">
+      <div class="album-body">
+        <h3>Gold Records Vol. 6</h3>
+        <p><strong>Omni</strong><br>Songs of return, surrender, and offering the whole soul.</p>
+        <a href="#" class="button" aria-disabled="true">Coming Soon</a>
+      </div>
+    </div>
+
+    <div class="album-card">
+      <img src="images/GRV7.png" alt="Gold Records Vol. 7: Words of Mormon">
+      <div class="album-body">
+        <h3>Gold Records Vol. 7</h3>
+        <p><strong>Words of Mormon</strong><br>Songs of hidden wisdom, sacred records, and trust.</p>
+        <a href="#" class="button" aria-disabled="true">Coming Soon</a>
+      </div>
+    </div>
+
+    <div class="album-card">
+      <img src="images/GRV8.png" alt="Gold Records Vol. 8: Mosiah">
+      <div class="album-body">
+        <h3>Gold Records Vol. 8</h3>
+        <p><strong>Mosiah</strong><br>Songs of conversion, service, deliverance, and covenant people.</p>
+        <a href="#" class="button" aria-disabled="true">Coming Soon</a>
+      </div>
+    </div>
+
+    <div class="album-card">
+      <img src="images/GRV9.png" alt="Gold Records Vol. 9: Alma">
+      <div class="album-body">
+        <h3>Gold Records Vol. 9</h3>
+        <p><strong>Alma</strong><br>Songs of repentance, testimony, courage, and choosing faith.</p>
+        <a href="#" class="button" aria-disabled="true">Coming Soon</a>
+      </div>
+    </div>
+
+    <div class="album-card">
+      <img src="images/GRV10.png" alt="Gold Records Vol. 10: Helaman">
+      <div class="album-body">
+        <h3>Gold Records Vol. 10</h3>
+        <p><strong>Helaman</strong><br>Songs of remembrance, warning, and standing on the rock.</p>
+        <a href="#" class="button" aria-disabled="true">Coming Soon</a>
+      </div>
+    </div>
+
+    <div class="album-card">
+      <img src="images/GRV11.png" alt="Gold Records Vol. 11: 3 Nephi">
+      <div class="album-body">
+        <h3>Gold Records Vol. 11</h3>
+        <p><strong>3 Nephi</strong><br>Songs of light, healing, peace, and the visit of Christ.</p>
+        <a href="#" class="button" aria-disabled="true">Coming Soon</a>
+      </div>
+    </div>
+
+    <div class="album-card">
+      <img src="images/GRV12.png" alt="Gold Records Vol. 12: 4 Nephi">
+      <div class="album-body">
+        <h3>Gold Records Vol. 12</h3>
+        <p><strong>4 Nephi</strong><br>Songs of unity, consecration, joy, and a people made one.</p>
+        <a href="#" class="button" aria-disabled="true">Coming Soon</a>
+      </div>
+    </div>
+
+    <div class="album-card">
+      <img src="images/GRV13.png" alt="Gold Records Vol. 13: Mormon">
+      <div class="album-body">
+        <h3>Gold Records Vol. 13</h3>
+        <p><strong>Mormon</strong><br>Songs of witness, sorrow, endurance, and final warning.</p>
+        <a href="#" class="button" aria-disabled="true">Coming Soon</a>
+      </div>
+    </div>
+
+    <div class="album-card">
+      <img src="images/GRV14.png" alt="Gold Records Vol. 14: Ether">
+      <div class="album-body">
+        <h3>Gold Records Vol. 14</h3>
+        <p><strong>Ether</strong><br>Songs of faith, brotherhood, promised lands, and tragic pride.</p>
+        <a href="#" class="button" aria-disabled="true">Coming Soon</a>
+      </div>
+    </div>
+
+    <div class="album-card">
+      <img src="images/GRV15.png" alt="Gold Records Vol. 15: Moroni">
+      <div class="album-body">
+        <h3>Gold Records Vol. 15</h3>
+        <p><strong>Moroni</strong><br>Songs of charity, ordinances, gifts, and a final invitation.</p>
+        <a href="#" class="button" aria-disabled="true">Coming Soon</a>
+      </div>
+    </div>
   </div>
 </section>
 
