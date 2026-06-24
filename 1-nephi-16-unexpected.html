@@ -19,7 +19,7 @@ h1{font-size:clamp(2rem,4vw,3.35rem);line-height:1.1;margin-bottom:14px}
 .subtitle{font-size:1.16rem;max-width:680px}
 .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
 .button{display:inline-block;background:#1f4d5a;color:white;text-decoration:none;padding:10px 14px;border-radius:6px;font-size:.92rem;font-weight:700}
-.button.secondary{background:#ffffff;color:#1f4d5a;border:1px solid rgba(31,77,90,.25)}
+.button.secondary{background:#ffffff;color:#1f4d5a;border:1px solid rgba(31,77,90,.25)}.streaming-links{margin-top:24px;text-align:center}.streaming-links h2{font-size:1.2rem;margin-bottom:12px}.streaming-list{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}.streaming-link{display:inline-flex;align-items:center;gap:8px;background:#fff;color:#1f4d5a;text-decoration:none;padding:9px 12px;border-radius:6px;border:1px solid rgba(31,77,90,.22);font-size:.9rem;font-weight:700}.streaming-link:hover{border-color:#1f4d5a;box-shadow:0 4px 12px rgba(31,77,90,.12)}.streaming-link img{width:18px;height:18px;display:block;box-shadow:none;border-radius:3px}
 .content-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,380px);gap:34px;align-items:start}
 .panel{background:#fff;border-radius:10px;padding:24px;box-shadow:0 8px 24px rgba(0,0,0,.1)}
 .panel h2{font-size:1.35rem;margin-bottom:14px}
@@ -50,6 +50,15 @@ h1{font-size:clamp(2rem,4vw,3.35rem);line-height:1.1;margin-bottom:14px}
       <div class="actions">
         <a class="button" href="1-nephi.html">Back to Album</a>
         <a class="button secondary" href="samples/16-unexpected.mp3">Listen to 30-Second Sample</a>
+      </div>
+      <div class="streaming-links" aria-label="Streaming services">
+        <h2>Listen on streaming services</h2>
+        <div class="streaming-list">
+        <a class="streaming-link" href="https://open.spotify.com/album/7bc2WauskKgHfpFhkVOOwC" target="_blank" rel="noopener"><img src="https://www.google.com/s2/favicons?domain=open.spotify.com&sz=32" alt="" width="18" height="18">Spotify</a>
+        <a class="streaming-link" href="https://music.apple.com/us/album/unexpected-single/6775695333" target="_blank" rel="noopener"><img src="https://www.google.com/s2/favicons?domain=music.apple.com&sz=32" alt="" width="18" height="18">Apple Music</a>
+        <a class="streaming-link" href="https://www.youtube.com/watch?v=aB7akbZc5tA&amp;list=OLAK5uy_nrcCBaLT76-d6Di4HMFzqq5oNcKIKsTAs&amp;index=16" target="_blank" rel="noopener"><img src="https://www.google.com/s2/favicons?domain=music.youtube.com&sz=32" alt="" width="18" height="18">YouTube Music</a>
+        <a class="streaming-link" href="https://music.amazon.com/albums/B0H3MH9D5X" target="_blank" rel="noopener"><img src="https://www.google.com/s2/favicons?domain=music.amazon.com&sz=32" alt="" width="18" height="18">Amazon Music</a>
+        </div>
       </div>
     </div>
   </section>
