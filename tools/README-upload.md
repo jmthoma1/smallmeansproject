@@ -1,21 +1,11 @@
-# Gold Records media uploader
+# Collection media workflow
 
-Download `Upload-GoldRecords.ps1` from the ChatGPT conversation, then run it on your Windows computer. The script reads the OneDrive-synced `Albums` directory and uploads only standardized MP3 and PNG/JPG song artwork to the root of this repository (where existing song pages expect them). WAV, DOCX, and unrelated files are excluded.
+Do not use the old root-directory uploader with the reorganized site. Run `Update-SongMedia.ps1` from a local checkout of the `website-reorganization` branch. It previews by default and replaces one existing song asset locally with `-Apply`. It never commits or pushes.
 
-**Requirements:** Git for Windows, authenticated GitHub push access, OneDrive folders available locally (Files On-Demand files must be downloaded).
-
-**Preview:**
+Example (PowerShell):
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\Upload-GoldRecords.ps1
+powershell -ExecutionPolicy Bypass -File .\tools\Update-SongMedia.ps1 -Source 'C:\Music\song.jpg' -SongFolder 'collections/gold-records/vol-01-1-nephi/songs/1-nephi-01-great-and-marvelous'
 ```
 
-**Publish:**
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\Upload-GoldRecords.ps1 -Publish
-```
-
-The script prompts for the full OneDrive Albums folder path and clones the website repository into `Documents\smallmeansproject-website` if necessary. It verifies the remote, skips identical files, checks for filename collisions, warns about missing assets, commits and pushes in batches, and warns when estimated repository content exceeds 900 MB.
-
-**Important:** GitHub repositories are not ideal for hosting gigabytes of MP3s. Consider dedicated object storage if the full catalog becomes too large. GitHub Pages cannot serve Git LFS pointer files as ordinary audio.
+Add `-Apply` after checking the destination. Use standardized square JPEGs and MP3 previews only. Review `git status` before committing and pushing to the working branch. Keep original full-resolution files and full songs offline. New songs require an HTML page and album navigation entry before media replacement. Bulk imports and future collection templates are not yet implemented. Do not delete legacy HTML redirects. GitHub Pages cannot serve Git LFS pointers as ordinary audio.
