@@ -1,0 +1,6 @@
+/* Landing page palette matches Gold Records. Shared layout remains unchanged. */
+body{background:radial-gradient(circle at 84% 20%,#f7e8c9,transparent 43%),linear-gradient(130deg,#f6f0df,#fefdf9 65%);color:#24333a;font-family:system-ui,-apple-system,Segoe UI,sans-serif}
+header a{font-family:system-ui,-apple-system,Segoe UI,sans-serif;font-weight:800;letter-spacing:.11em;color:#24333a}
+header h1{font-family:Georgia,serif;font-weight:700;letter-spacing:-.045em;line-height:1.05}
+footer{color:#52636b}
+a:focus-visible{outline-color:#9a742f}
