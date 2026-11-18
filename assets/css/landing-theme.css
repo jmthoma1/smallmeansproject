@@ -4,3 +4,6 @@ header a{font-family:system-ui,-apple-system,Segoe UI,sans-serif;font-weight:800
 header h1{font-family:Georgia,serif;font-weight:700;letter-spacing:-.045em;line-height:1.05}
 footer{color:#52636b}
 a:focus-visible{outline-color:#9a742f}
+
+/* Half-size collection artwork on desktop; retain readable mobile tiles. */
+@media(min-width:701px){.collections{width:min(50%,700px,calc((100svh - 180px)*1.5));gap:clamp(10px,1vw,16px)}}
